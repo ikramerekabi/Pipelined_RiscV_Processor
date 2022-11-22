@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Sun Nov 13 22:53:23 2022
+# Process ID: 15572
+# Current directory: C:/Users/ikrame.rekabi/Desktop/Project_mileStone1_I_M/Project_mileStone1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14312 C:\Users\ikrame.rekabi\Desktop\Project_mileStone1_I_M\Project_mileStone1\lab5_Maram_Ikrame.xpr
+# Log file: C:/Users/ikrame.rekabi/Desktop/Project_mileStone1_I_M/Project_mileStone1/vivado.log
+# Journal file: C:/Users/ikrame.rekabi/Desktop/Project_mileStone1_I_M/Project_mileStone1\vivado.jou
+# Running On: CSE-P07-2168-2, OS: Windows, CPU Frequency: 3696 MHz, CPU Physical cores: 8, Host memory: 34020 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/ikrame.rekabi/Desktop/Project_mileStone1_I_M/Project_mileStone1/lab5_Maram_Ikrame.xpr
+update_compile_order -fileset sources_1

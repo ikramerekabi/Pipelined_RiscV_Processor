@@ -1,0 +1,39 @@
+Vivado Simulator v2022.1
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2022.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot CPU_tb_behav xil_defaultlib.CPU_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 157 differs from formal bit length 160 for port 'D' [C:/Users/ikrame.rekabi/Desktop/arch_project_M3_submission/Project_mileStone2_I_M/Project_mileStone1/lab5_Maram_Ikrame.srcs/sources_1/new/Single_Cycle_CPU.v:90]
+WARNING: [VRFC 10-3091] actual bit length 157 differs from formal bit length 160 for port 'Q' [C:/Users/ikrame.rekabi/Desktop/arch_project_M3_submission/Project_mileStone2_I_M/Project_mileStone1/lab5_Maram_Ikrame.srcs/sources_1/new/Single_Cycle_CPU.v:91]
+WARNING: [VRFC 10-3091] actual bit length 145 differs from formal bit length 300 for port 'D' [C:/Users/ikrame.rekabi/Desktop/arch_project_M3_submission/Project_mileStone2_I_M/Project_mileStone1/lab5_Maram_Ikrame.srcs/sources_1/new/Single_Cycle_CPU.v:93]
+WARNING: [VRFC 10-3091] actual bit length 145 differs from formal bit length 300 for port 'Q' [C:/Users/ikrame.rekabi/Desktop/arch_project_M3_submission/Project_mileStone2_I_M/Project_mileStone1/lab5_Maram_Ikrame.srcs/sources_1/new/Single_Cycle_CPU.v:94]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 12 for port 'A' [C:/Users/ikrame.rekabi/Desktop/arch_project_M3_submission/Project_mileStone2_I_M/Project_mileStone1/lab5_Maram_Ikrame.srcs/sources_1/new/Single_Cycle_CPU.v:144]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.MUX2x1
+Compiling module xil_defaultlib.DFlip_flop
+Compiling module xil_defaultlib.N_bit_register(N=96)
+Compiling module xil_defaultlib.N_bit_register(N=196)
+Compiling module xil_defaultlib.N_bit_register(N=160)
+Compiling module xil_defaultlib.N_bit_register(N=300)
+Compiling module xil_defaultlib.N_bit_register_default
+Compiling module xil_defaultlib.Control_Unit
+Compiling module xil_defaultlib.Register_File_default
+Compiling module xil_defaultlib.rv32_ImmGen
+Compiling module xil_defaultlib.N_bit_MUX_default
+Compiling module xil_defaultlib.ALU_Control_Unit
+Compiling module xil_defaultlib.shifter
+Compiling module xil_defaultlib.prv32_ALU
+Compiling module xil_defaultlib.control_branches
+Compiling module xil_defaultlib.Forwarding_unit
+Compiling module xil_defaultlib.MUX4x1
+Compiling module xil_defaultlib.N_BIT_4x1mux_default
+Compiling module xil_defaultlib.Single_Ported_Memory
+Compiling module xil_defaultlib.N_bit_MUX(n=12)
+Compiling module xil_defaultlib.Single_Cycle_CPU
+Compiling module xil_defaultlib.CPU_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot CPU_tb_behav

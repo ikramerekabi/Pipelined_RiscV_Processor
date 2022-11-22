@@ -1,0 +1,28 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Sun Nov  6 22:06:22 2022
+# Process ID: 11308
+# Current directory: C:/Users/Marammahmoudi/Desktop/Project_mileStone1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15444 C:\Users\Marammahmoudi\Desktop\Project_mileStone1\lab5_Maram_Ikrame.xpr
+# Log file: C:/Users/Marammahmoudi/Desktop/Project_mileStone1/vivado.log
+# Journal file: C:/Users/Marammahmoudi/Desktop/Project_mileStone1\vivado.jou
+# Running On: CSE-P07-2165-09, OS: Windows, CPU Frequency: 3696 MHz, CPU Physical cores: 8, Host memory: 34020 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Marammahmoudi/Desktop/Project_mileStone1/lab5_Maram_Ikrame.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config C:/Users/Marammahmoudi/Desktop/Project_mileStone1/lab5_Maram_Ikrame.srcs/sim_1/imports/Project_mileStone1/CPU_tb_behav.wcfg
+source CPU_tb.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/Marammahmoudi/Desktop/Project_mileStone1/lab5_Maram_Ikrame.srcs/sim_1/imports/Project_mileStone1/CPU_tb_behav.wcfg
+source CPU_tb.tcl
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+write_schematic -format pdf -orientation portrait C:/Users/Marammahmoudi/Desktop/Project_mileStone1/lab5_Maram_Ikrame.xpr/schematic.pdf
+write_schematic C:/Users/Marammahmoudi/Desktop/schematic.sch
+write_schematic -format pdf -orientation portrait C:/Users/Marammahmoudi/Desktop/schematic.pdf
+save_wave_config {C:/Users/Marammahmoudi/Desktop/Project_mileStone1/lab5_Maram_Ikrame.srcs/sim_1/imports/Project_mileStone1/CPU_tb_behav.wcfg}
+close_sim

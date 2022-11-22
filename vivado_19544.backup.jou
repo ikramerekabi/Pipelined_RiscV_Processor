@@ -1,0 +1,44 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Tue Nov 15 18:37:19 2022
+# Process ID: 19544
+# Current directory: C:/Users/ikrame.rekabi/Desktop/arch_project_M3_submission/Project_mileStone2_I_M/Project_mileStone1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17048 C:\Users\ikrame.rekabi\Desktop\arch_project_M3_submission\Project_mileStone2_I_M\Project_mileStone1\lab5_Maram_Ikrame.xpr
+# Log file: C:/Users/ikrame.rekabi/Desktop/arch_project_M3_submission/Project_mileStone2_I_M/Project_mileStone1/vivado.log
+# Journal file: C:/Users/ikrame.rekabi/Desktop/arch_project_M3_submission/Project_mileStone2_I_M/Project_mileStone1\vivado.jou
+# Running On: CSE-P07-2168-2, OS: Windows, CPU Frequency: 3696 MHz, CPU Physical cores: 8, Host memory: 34020 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/ikrame.rekabi/Desktop/arch_project_M3_submission/Project_mileStone2_I_M/Project_mileStone1/lab5_Maram_Ikrame.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config C:/Users/ikrame.rekabi/Desktop/arch_project_M3_submission/Project_mileStone2_I_M/Project_mileStone1/lab5_Maram_Ikrame.srcs/sim_1/imports/Project_mileStone1/CPU_tb_behav.wcfg
+source CPU_tb.tcl
+relaunch_sim
+relaunch_sim
+relaunch_sim
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+close [ open C:/Users/ikrame.rekabi/Desktop/arch_project_M3_submission/Project_mileStone2_I_M/Project_mileStone1/lab5_Maram_Ikrame.srcs/sources_1/new/Forwarding_unit.v w ]
+add_files C:/Users/ikrame.rekabi/Desktop/arch_project_M3_submission/Project_mileStone2_I_M/Project_mileStone1/lab5_Maram_Ikrame.srcs/sources_1/new/Forwarding_unit.v
+update_compile_order -fileset sources_1
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+close_sim
+launch_simulation
+open_wave_config C:/Users/ikrame.rekabi/Desktop/arch_project_M3_submission/Project_mileStone2_I_M/Project_mileStone1/lab5_Maram_Ikrame.srcs/sim_1/imports/Project_mileStone1/CPU_tb_behav.wcfg
+source CPU_tb.tcl
+relaunch_sim
+relaunch_sim
+relaunch_sim
+save_wave_config {C:/Users/ikrame.rekabi/Desktop/arch_project_M3_submission/Project_mileStone2_I_M/Project_mileStone1/lab5_Maram_Ikrame.srcs/sim_1/imports/Project_mileStone1/CPU_tb_behav.wcfg}
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+save_wave_config {C:/Users/ikrame.rekabi/Desktop/arch_project_M3_submission/Project_mileStone2_I_M/Project_mileStone1/lab5_Maram_Ikrame.srcs/sim_1/imports/Project_mileStone1/CPU_tb_behav.wcfg}
+close_sim
