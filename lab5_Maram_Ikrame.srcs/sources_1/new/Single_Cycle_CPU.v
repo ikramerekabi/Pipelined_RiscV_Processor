@@ -111,7 +111,7 @@ module Single_Cycle_CPU(input rst, input clk, input [1:0]ledSel,
 
     N_bit_MUX inst_RF_MUX(.A(ID_EX_Imm), .B(forwarding_mux_RS2_out),  .sel(ID_EX_Ctrl[1]), .C(RF_MUX_output) );
 
-    ALU_Control_Unit inst_ALUCU( .ALUop(ID_EX_Ctrl[4:3]), .inst14_12(ID_EX_Func [2:0]) ,.inst30( ID_EX_Func[3]), .ALUselc(lAU_Control_output));
+    ALU_Control_Unit inst_ALUCU( .ALUop(ID_EX_Ctrl[4:3]),.opcode(ID_EX_opcode), .inst14_12(ID_EX_Func [2:0]) ,.inst30( ID_EX_Func[3]), .ALUselc(lAU_Control_output));
 
     prv32_ALU inst_LAUC(.a(forwarding_mux_RS1_out), .b(RF_MUX_output), .shamt(IF_ID_Inst[24:20] ), .r(NBit_lAU_output), .zf(LAU_zero_flag),
         .cf(cf),.vf(vf), .sf(sf), .alufn(lAU_Control_output)); // shamt from ID_ID  right? and everthing else taken from inst !!!!!

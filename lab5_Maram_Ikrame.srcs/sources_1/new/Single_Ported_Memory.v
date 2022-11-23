@@ -5,11 +5,11 @@
 //(input clk, input MemRead, input MemWrite, input [2:0]fn3_store , input [5:0] addr, input [31:0] data_in, 
 // output reg [31:0] data_out);
 module Single_Ported_Memory(input clk, mem_read, mem_write, input [2:0]fn3, input [10:0] addrs,input [31:0] data_in,  output reg [31:0]  data_out );
-    
+
     reg [7:0] mem [0:255];
     wire [10:0] offset = 11'd128;
     wire [10:0] data_address=offset+addrs;
-    
+
     initial begin
         /*
         mem[0]=32'd17;
@@ -19,24 +19,24 @@ module Single_Ported_Memory(input clk, mem_read, mem_write, input [2:0]fn3, inpu
         mem[4]= 32'd0;
         mem[5]= 32'd22;
 */
-       {mem[131],mem[130],mem[129],mem[128]}=32'd17;
-       {mem[135],mem[134],mem[133],mem[132]}=32'd9;
-       {mem[139],mem[138],mem[137],mem[136]}=32'd25;
-//       {mem[143],mem[142],mem[141],mem[140]}=32'd1;
-//       {mem[147],mem[146],mem[145],mem[144]}=32'd0;
-//       {mem[151],mem[150],mem[149],mem[148]}=32'd22;
-//       {mem[155],mem[154],mem[153],mem[152]}=32'd0;
-//       {mem[159],mem[158],mem[157],mem[156]}=32'd0;
-//       {mem[163],mem[162],mem[161],mem[160]}=32'd25;
-//       {mem[167],mem[166],mem[165],mem[164]}=32'd0;
-//       {mem[171],mem[170],mem[169],mem[168]}=32'd0;
-//       {mem[175],mem[174],mem[173],mem[172]}=32'd0;
-       // mem[140]=8'd0;
+        {mem[131],mem[130],mem[129],mem[128]}=32'd17;
+        {mem[135],mem[134],mem[133],mem[132]}=32'd9;
+        {mem[139],mem[138],mem[137],mem[136]}=32'd25;
+        {mem[143],mem[142],mem[141],mem[140]}=32'hFFFFFFFB; //WE CHECK THIS LATER //-5
+        {mem[147],mem[146],mem[145],mem[144]}=32'd2;
+        {mem[151],mem[150],mem[149],mem[148]}=32'd22;
+        {mem[155],mem[154],mem[153],mem[152]}=32'd0;
+        {mem[159],mem[158],mem[157],mem[156]}=32'd32769; // this is for the lh and lhu //-32767 for the lh //32769 lhu
+        {mem[163],mem[162],mem[161],mem[160]}=32'd130; //to test the lb and lbu // lbu = 130 // lb = -126
+        //       {mem[167],mem[166],mem[165],mem[164]}=32'd0;
+        //       {mem[171],mem[170],mem[169],mem[168]}=32'd0;
+        //       {mem[175],mem[174],mem[173],mem[172]}=32'd0;
+        // mem[140]=8'd0;
 
     end
 
     initial begin
-       
+
         //Test Case 1
         /*
         {mem[3], mem[2], mem[1], mem[0]}=32'b000000000000_00000_000_00000_0110011 ; //add x0, x0, x0
@@ -63,7 +63,7 @@ module Single_Ported_Memory(input clk, mem_read, mem_write, input [2:0]fn3, inpu
         {mem[87], mem[86], mem[85], mem[84]}=32'b0000000_00010_00001_110_00100_0110011 ; //or x4, x1, x2   
         {mem[91],mem[90],mem[89],mem[88]} =32'b0000000_00010_00001_110_00100_0110011 ; //or x4, x1, x2   
         */
-        
+
         /*
         
           {mem[3],mem[2],mem[1],mem[0]}=32'b0000000_00000_00000_000_00000_0110011 ; //add x0, x0, x0                
@@ -97,9 +97,9 @@ module Single_Ported_Memory(input clk, mem_read, mem_write, input [2:0]fn3, inpu
          {mem[119],mem[118],mem[117],mem[116]}=32'b0000000_00000_00000_000_00000_0110011 ; //add x0, x0, x0             
          {mem[123],mem[122],mem[121],mem[120]}=32'b0000000_00101_00000_010_01100_0100011; //sw x5, 12(x0) 
          */
-       
-  // the lab test inst  
-  
+
+        // the lab test inst  
+        /*
         {mem[3],mem[2],mem[1],mem[0]}=32'b0000000_00000_00000_000_00000_0110011 ; //add x0, x0, x0                
         {mem[7],mem[6],mem[5],mem[4]}=32'b000000000000_00000_010_00001_0000011 ; //lw x1, 0(x0)            
         {mem[11],mem[10],mem[9],mem[8]}=32'b000000000100_00000_010_00010_0000011 ; //lw x2, 4(x0)                          
@@ -109,7 +109,7 @@ module Single_Ported_Memory(input clk, mem_read, mem_write, input [2:0]fn3, inpu
 //         {mem[27],mem[26],mem[25],mem[24]}=32'b0000000_00000_00000_000_00000_0110011 ; //add x0, x0, x0            
 //         {mem[31],mem[30],mem[29],mem[28]}=32'b0000000_00000_00000_000_00000_0110011 ; //add x0, x0, x0            
 //        {mem[35],mem[34],mem[33],mem[32]}          
-         {mem[27],mem[26],mem[25],mem[24]}             =32'b0000000_00000_00000_000_00000_0110011 ; //add x0, x0, x0           
+         {mem[27],mem[26],mem[25],mem[24]}=32'b0000000_00000_00000_000_00000_0110011 ; //add x0, x0, x0           
          {mem[31],mem[30],mem[29],mem[28]}=32'b0000000_00010_00001_000_00011_0110011 ; //add x3, x1, x2   
          {mem[35],mem[34],mem[33],mem[32]}=32'b0000000_00010_00011_000_00101_0110011 ; //add x5, x3, x2   
          {mem[39],mem[38],mem[37],mem[36]}=32'b0000000_00101_00000_010_01100_0100011; //sw x5, 12(x0)     
@@ -118,12 +118,12 @@ module Single_Ported_Memory(input clk, mem_read, mem_write, input [2:0]fn3, inpu
          {mem[51],mem[50],mem[49],mem[48]}=32'b0100000_00010_00001_000_01000_0110011 ; //sub x8, x1, x2   
          {mem[55],mem[54],mem[53],mem[52]}=32'b0000000_00010_00001_000_00000_0110011 ; //add x0, x1, x2   
          {mem[59],mem[58],mem[57],mem[56]}=32'b0000000_00001_00000_000_01001_0110011 ; //add x9, x0       
- 
-      
-      // {mem[3], mem[2], mem[1], mem[0]} =32'b000000000000_00000_000_00000_0110011 ; //add x0, x0, x0
+ */
+
+        // {mem[3], mem[2], mem[1], mem[0]} =32'b000000000000_00000_000_00000_0110011 ; //add x0, x0, x0
         //added to be skipped since PC starts with 4 after reset
-      // {mem[7], mem[6], mem[5], mem[4]}= 32'b000000000000_00000_010_00001_0000011 ; //lw x1, 0(x0)
-       /*
+        // {mem[7], mem[6], mem[5], mem[4]}= 32'b000000000000_00000_010_00001_0000011 ; //lw x1, 0(x0)
+        /*
         mem[2]=32'b0000000_00000_00000_000_00000_0110011 ; //add x0, x0, x0
         mem[3]=32'b0000000_00000_00000_000_00000_0110011 ; //add x0, x0, x0
         mem[4]=32'b0000000_00000_00000_000_00000_0110011 ; //add x0, x0, x0
@@ -137,7 +137,7 @@ module Single_Ported_Memory(input clk, mem_read, mem_write, input [2:0]fn3, inpu
         mem[12]=32'b0000000_00000_00000_000_00000_0110011 ; //add x0, x0, x0
         mem[13]=32'b0000000_00010_00001_110_00100_0110011 ; //or x4, x1, x2
         */
-  /*      
+        /*      
        // seif test 
         {mem[3],mem[2],mem[1],mem[0]}=32'h00000033;    
         {mem[7],mem[6],mem[5],mem[4]}=32'h00300413;
@@ -175,34 +175,83 @@ module Single_Ported_Memory(input clk, mem_read, mem_write, input [2:0]fn3, inpu
         {mem[135],mem[134],mem[133],mem[132]}= 32'h0082f463  ;
         {mem[139],mem[138],mem[137],mem[136]}= 32'h00000033  ;
         {mem[143],mem[142],mem[141],mem[140]}= 32'h00000073  ;
-     */                                          
-                                               
-  /////                                             
-                                               
-        
-        
-        
-        
-        
-        
-        
-        
-        
+     */
+        /*
+        /////  Test case 1  I instructions
+        {mem[3],mem[2],mem[1],mem[0]}=    32'h00308093; // addi x1, x1, 3 # x1 = 3                      
+        {mem[7],mem[6],mem[5],mem[4]}=    32'hfee10113; // addi x2, x2, -18 # x2 = -18                       
+        {mem[11],mem[10],mem[9],mem[8]}=  32'h00c18193; // addi x3, x3, 12 # x3 = 12 to check the slli
+        {mem[15],mem[14],mem[13],mem[12]}=32'h00120213 ; // addi x4, x4, 1  # x4 = 1 to check the srli 
+        {mem[19],mem[18],mem[17],mem[16]}=32'h00209293 ; // slli x5, x1, 2  # x5 =12 
+        {mem[23],mem[22],mem[21],mem[20]}=32'h04329063 ; // bne x5, x3, fail # it jumps if the slli is not working 
+        {mem[27],mem[26],mem[25],mem[24]}=32'h0010d293 ; // srli x5, x1, 1  # x5 = 1 
+        {mem[31],mem[30],mem[29],mem[28]}=32'h02429c63 ; // bne x5, x4, fail #it jumps if the srli is not working 
+        {mem[35],mem[34],mem[33],mem[32]}=32'h00c17293 ; // andi x5, x2, 12 # X5 = 12
+        {mem[39],mem[38],mem[37],mem[36]}=32'h02329863 ; // bne x5, x3, fail #it jumps if the andi is not working
+        {mem[43],mem[42],mem[41],mem[40]}=32'h00002203 ; // lw x4, 0(x0) # x4 = 17
+        {mem[47],mem[46],mem[45],mem[44]}=32'h00802283 ; // lw x5, 4(x1) # x5 = 25 
+        {mem[51],mem[50],mem[49],mem[48]}=32'h0081e113 ; // ori x2, x3, 8  # x2 = 12
+        {mem[55],mem[54],mem[53],mem[52]}=32'h02228063 ; // beq x5 x2 32  beq x5, x2, fail #it jumps if the ori is not working
+        {mem[59],mem[58],mem[57],mem[56]}=32'h01c01203 ; // lh  x4, 28(x0) # x4 = -32767
+        {mem[63],mem[62],mem[61],mem[60]}=32'h01c05203 ; // lhu  x4, 32(x0) # x4 = 32769
+        {mem[67],mem[66],mem[65],mem[64]}=32'h02000283 ; // lb x5, 36(x0) # x5 = -126
+        {mem[71],mem[70],mem[69],mem[68]}=32'h02004283 ; // lbu x5, 36(x0) # x5 = 130
+        {mem[75],mem[74],mem[73],mem[72]}=32'hffb2c193 ; // xori x3, x5, -5 # x3 = -135
+        {mem[79],mem[78],mem[77],mem[76]}=32'hf7930313 ; // addi x6, x6, -135 # x6 = -135
+        {mem[83],mem[82],mem[81],mem[80]}=32'h00629263 ; // bne x5, x6, fail #it jumps if the ori is not working
+        {mem[87],mem[86],mem[85],mem[84]}=32'h00008093 ; // addi x1, x1, 0:
+*/
+
+        // Test Case 2 //R instructions 
+
+        {mem[3],mem[2],mem[1],mem[0]}=    32'h00002083; //Lw x1, 0(x0)    #x1= 17;  
+        {mem[7],mem[6],mem[5],mem[4]}=    32'h00402103; //Lw x2, 4(x0)   #x2 = 9    
+        {mem[11],mem[10],mem[9],mem[8]}=  32'h00802183; //Lw x3, 8(x0)   #x3= 25 
+        {mem[15],mem[14],mem[13],mem[12]}=32'h00c02203; //Lw x4, 12(x0) # x4= -5 
+        {mem[19],mem[18],mem[17],mem[16]}=32'h01002283; //Lw x5, 16(x0) # x5 = 2 
+        {mem[23],mem[22],mem[21],mem[20]}=32'h00308133; //add x2, x1, x3 # x2 = 42
+        {mem[27],mem[26],mem[25],mem[24]}=32'h404181b3; //sub x3, x3, x4 # x3=30
+        {mem[31],mem[30],mem[29],mem[28]}=32'h005190b3; //sll x1, x3, x5 #x1= 120
+        {mem[35],mem[34],mem[33],mem[32]}=32'h0050d333; //srl x6, x1, x5 #x6 = 30
+        {mem[39],mem[38],mem[37],mem[36]}=32'h4021d133; //sra x2, x3, x2 #x2 =0
+        {mem[43],mem[42],mem[41],mem[40]}=32'h00011863; //bne x2, x0, fail
+        {mem[47],mem[46],mem[45],mem[44]}=32'h0041f333; //and x6, x3, x4  #x6= 26
+        {mem[51],mem[50],mem[49],mem[48]}=32'h000162b3; //or x5, x2, x0 #x5 =0 
+        {mem[55],mem[54],mem[53],mem[52]}=32'h003140b3; //xor x1, x2, x3 #x1= 30
+        {mem[59],mem[58],mem[57],mem[56]}=32'h00000073; //Ecall         
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     end
     // Posedge clk?
     always @(*)
-    begin 
-     if(mem_write == 1'b1)
-         begin
-             if(fn3==3'b010) // sw 
-                 {mem[data_address+3],mem[data_address+2],mem[data_address+1],mem[data_address]}= data_in;
-             else  if(fn3==3 'b000) //sb 
-                 mem[data_address]= data_in[7:0];
-             else  if(fn3==3'b001) //sh
-                 {mem[data_address+1],mem[data_address]}= data_in[15:0];
-    end 
+    begin
+        if(mem_write == 1'b1)
+        begin
+            if(fn3==3'b010) // sw 
+                {mem[data_address+3],mem[data_address+2],mem[data_address+1],mem[data_address]}= data_in;
+            else  if(fn3==3 'b000) //sb 
+                mem[data_address]= data_in[7:0];
+            else  if(fn3==3'b001) //sh
+                {mem[data_address+1],mem[data_address]}= data_in[15:0];
+        end
     end
-    
+
     always@(*)
     begin
         if(clk)
@@ -218,7 +267,7 @@ module Single_Ported_Memory(input clk, mem_read, mem_write, input [2:0]fn3, inpu
                         data_out= {mem[data_address+3],mem[data_address+2],mem[data_address+1],mem[data_address]};
                     else  if(fn3==`F3_LB) //lb 
                         data_out= {{24{mem[data_address][7]}}, mem[data_address]} ;
-              
+
                     else  if(fn3==`F3_LH ) //lh
                         data_out= {{16{mem[data_address+1][7]}},mem[data_address+1], mem[data_address]} ;
                     else if(fn3== `F3_lBU) //lbu 
@@ -226,8 +275,8 @@ module Single_Ported_Memory(input clk, mem_read, mem_write, input [2:0]fn3, inpu
                     else if (fn3 == `F3_LHU ) //lhu
                         data_out = {16'b0,mem[data_address+1], mem[data_address]} ;
                 end
-                
-               
+
+
             end
 
 

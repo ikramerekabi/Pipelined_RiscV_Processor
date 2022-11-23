@@ -2,18 +2,16 @@
 # Vivado v2022.1 (64-bit)
 # SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
 # IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
-# Start of session at: Tue Nov 22 00:14:35 2022
-# Process ID: 15392
-# Current directory: C:/Users/ikrame.rekabi/Desktop/arch_project_M3_submission/Project_mileStone2_I_M/Project_mileStone1
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13476 C:\Users\ikrame.rekabi\Desktop\arch_project_M3_submission\Project_mileStone2_I_M\Project_mileStone1\lab5_Maram_Ikrame.xpr
-# Log file: C:/Users/ikrame.rekabi/Desktop/arch_project_M3_submission/Project_mileStone2_I_M/Project_mileStone1/vivado.log
-# Journal file: C:/Users/ikrame.rekabi/Desktop/arch_project_M3_submission/Project_mileStone2_I_M/Project_mileStone1\vivado.jou
-# Running On: CSE-P07-2168-2, OS: Windows, CPU Frequency: 3696 MHz, CPU Physical cores: 8, Host memory: 34020 MB
+# Start of session at: Wed Nov 23 15:52:04 2022
+# Process ID: 8844
+# Current directory: C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17040 C:\Users\ikrame.rekabi\Documents\GitHub\Pipelined_RiscV_Processor\lab5_Maram_Ikrame.xpr
+# Log file: C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/vivado.log
+# Journal file: C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor\vivado.jou
+# Running On: CSE-P07-2165-51, OS: Windows, CPU Frequency: 3492 MHz, CPU Physical cores: 6, Host memory: 34278 MB
 #-----------------------------------------------------------
 start_gui
-open_project C:/Users/ikrame.rekabi/Desktop/arch_project_M3_submission/Project_mileStone2_I_M/Project_mileStone1/lab5_Maram_Ikrame.xpr
-INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
-Current project path is 'C:/Users/ikrame.rekabi/Desktop/arch_project_M3_submission/Project_mileStone2_I_M/Project_mileStone1'
+open_project C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.xpr
 WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at C:/Xilinx/Vivado/2022.1/data/boards/board_files/genesys2/H/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part digilentinc.com:sword:part0:1.0 available at C:/Xilinx/Vivado/2022.1/data/boards/board_files/sword/C.0/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.6 available at C:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kc705/1.6/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
@@ -55,14 +53,865 @@ WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216:part0:2.0 availab
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at C:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+INFO: [Project 1-313] Project file moved from 'C:/Users/ikrame.rekabi/Desktop/arch_project_M3_submission/Project_mileStone2_I_M/Project_mileStone1' since last save.
 WARNING: [filemgmt 56-3] IP Output Repository Path: Could not find the directory 'C:/Users/Marammahmoudi/Desktop/Project_mileStone1/lab5_Maram_Ikrame.cache/ip'.
-INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/ikrame.rekabi/Desktop/arch_project_M3_submission/Project_mileStone2_I_M/Project_mileStone1/lab5_Maram_Ikrame.gen/sources_1'.
+INFO: [filemgmt 56-2] Default IP Output Path : Could not find the directory 'C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.gen/sources_1', nor could it be found using path 'C:/Users/ikrame.rekabi/Desktop/arch_project_M3_submission/Project_mileStone2_I_M/Project_mileStone1/lab5_Maram_Ikrame.gen/sources_1'.
 Scanning sources...
 Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.1/data/ip'.
-open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:08 . Memory (MB): peak = 1606.438 ; gain = 0.000
+open_project: Time (s): cpu = 00:00:33 ; elapsed = 00:00:16 . Memory (MB): peak = 1603.395 ; gain = 0.000
 update_compile_order -fileset sources_1
-exit
-INFO: [Common 17-206] Exiting Vivado at Tue Nov 22 00:15:08 2022...
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'CPU_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2022.1/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2022.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'CPU_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj CPU_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/imports/marammahmoudi/lab_3/lab_3.srcs/sources_1/new/DFlip_flop.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DFlip_flop
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/imports/marammahmoudi/lab_4/lab_4.srcs/sources_1/new/Exp2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Register_File
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/imports/marammahmoudi/lab_4/lab_4.srcs/sources_1/new/Exp4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_Control_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/new/Forwarding_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Forwarding_unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/imports/VerilogSrc/ImmGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rv32_ImmGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/imports/marammahmoudi/lab_3/lab_3.srcs/sources_1/new/MUX2x1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX2x1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/new/MUX4x1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX4x1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/new/N_BIT_4x1mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module N_BIT_4x1mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/imports/marammahmoudi/lab_3/lab_3.srcs/sources_1/new/N_bit_MUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module N_bit_MUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/imports/new/N_bit_register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module N_bit_register
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/new/Single_Cycle_CPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Single_Cycle_CPU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/new/Single_Ported_Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Single_Ported_Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/new/control_branches.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control_branches
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/imports/marammahmoudi/lab_4/lab_4.srcs/sources_1/new/exp3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/imports/VerilogSrc/prv32_ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module prv32_ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/new/shifter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module shifter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sim_1/new/CPU_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot CPU_tb_behav xil_defaultlib.CPU_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2022.1
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2022.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot CPU_tb_behav xil_defaultlib.CPU_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 157 differs from formal bit length 160 for port 'D' [C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/new/Single_Cycle_CPU.v:90]
+WARNING: [VRFC 10-3091] actual bit length 157 differs from formal bit length 160 for port 'Q' [C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/new/Single_Cycle_CPU.v:91]
+WARNING: [VRFC 10-3091] actual bit length 145 differs from formal bit length 300 for port 'D' [C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/new/Single_Cycle_CPU.v:93]
+WARNING: [VRFC 10-3091] actual bit length 145 differs from formal bit length 300 for port 'Q' [C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/new/Single_Cycle_CPU.v:94]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 12 for port 'A' [C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/new/Single_Cycle_CPU.v:144]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.MUX2x1
+Compiling module xil_defaultlib.DFlip_flop
+Compiling module xil_defaultlib.N_bit_register(N=96)
+Compiling module xil_defaultlib.N_bit_register(N=196)
+Compiling module xil_defaultlib.N_bit_register(N=160)
+Compiling module xil_defaultlib.N_bit_register(N=300)
+Compiling module xil_defaultlib.N_bit_register_default
+Compiling module xil_defaultlib.Control_Unit
+Compiling module xil_defaultlib.Register_File_default
+Compiling module xil_defaultlib.rv32_ImmGen
+Compiling module xil_defaultlib.N_bit_MUX_default
+Compiling module xil_defaultlib.ALU_Control_Unit
+Compiling module xil_defaultlib.shifter
+Compiling module xil_defaultlib.prv32_ALU
+Compiling module xil_defaultlib.control_branches
+Compiling module xil_defaultlib.Forwarding_unit
+Compiling module xil_defaultlib.MUX4x1
+Compiling module xil_defaultlib.N_BIT_4x1mux_default
+Compiling module xil_defaultlib.Single_Ported_Memory
+Compiling module xil_defaultlib.N_bit_MUX(n=12)
+Compiling module xil_defaultlib.Single_Cycle_CPU
+Compiling module xil_defaultlib.CPU_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot CPU_tb_behav
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1575.816 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "CPU_tb_behav -key {Behavioral:sim_1:Functional:CPU_tb} -tclbatch {CPU_tb.tcl} -view {C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sim_1/imports/Project_mileStone1/CPU_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+open_wave_config C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sim_1/imports/Project_mileStone1/CPU_tb_behav.wcfg
+source CPU_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'CPU_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:15 . Memory (MB): peak = 1575.816 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'CPU_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2022.1/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2022.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'CPU_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj CPU_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/imports/marammahmoudi/lab_3/lab_3.srcs/sources_1/new/DFlip_flop.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DFlip_flop
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/imports/marammahmoudi/lab_4/lab_4.srcs/sources_1/new/Exp2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Register_File
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/imports/marammahmoudi/lab_4/lab_4.srcs/sources_1/new/Exp4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_Control_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/new/Forwarding_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Forwarding_unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/imports/VerilogSrc/ImmGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rv32_ImmGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/imports/marammahmoudi/lab_3/lab_3.srcs/sources_1/new/MUX2x1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX2x1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/new/MUX4x1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX4x1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/new/N_BIT_4x1mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module N_BIT_4x1mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/imports/marammahmoudi/lab_3/lab_3.srcs/sources_1/new/N_bit_MUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module N_bit_MUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/imports/new/N_bit_register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module N_bit_register
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/new/Single_Cycle_CPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Single_Cycle_CPU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/new/Single_Ported_Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Single_Ported_Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/new/control_branches.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control_branches
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/imports/marammahmoudi/lab_4/lab_4.srcs/sources_1/new/exp3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/imports/VerilogSrc/prv32_ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module prv32_ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/new/shifter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module shifter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sim_1/new/CPU_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU_tb
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'CPU_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot CPU_tb_behav xil_defaultlib.CPU_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2022.1
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2022.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot CPU_tb_behav xil_defaultlib.CPU_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 157 differs from formal bit length 160 for port 'D' [C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/new/Single_Cycle_CPU.v:90]
+WARNING: [VRFC 10-3091] actual bit length 157 differs from formal bit length 160 for port 'Q' [C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/new/Single_Cycle_CPU.v:91]
+WARNING: [VRFC 10-3091] actual bit length 145 differs from formal bit length 300 for port 'D' [C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/new/Single_Cycle_CPU.v:93]
+WARNING: [VRFC 10-3091] actual bit length 145 differs from formal bit length 300 for port 'Q' [C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/new/Single_Cycle_CPU.v:94]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 12 for port 'A' [C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/new/Single_Cycle_CPU.v:144]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.MUX2x1
+Compiling module xil_defaultlib.DFlip_flop
+Compiling module xil_defaultlib.N_bit_register(N=96)
+Compiling module xil_defaultlib.N_bit_register(N=196)
+Compiling module xil_defaultlib.N_bit_register(N=160)
+Compiling module xil_defaultlib.N_bit_register(N=300)
+Compiling module xil_defaultlib.N_bit_register_default
+Compiling module xil_defaultlib.Control_Unit
+Compiling module xil_defaultlib.Register_File_default
+Compiling module xil_defaultlib.rv32_ImmGen
+Compiling module xil_defaultlib.N_bit_MUX_default
+Compiling module xil_defaultlib.ALU_Control_Unit
+Compiling module xil_defaultlib.shifter
+Compiling module xil_defaultlib.prv32_ALU
+Compiling module xil_defaultlib.control_branches
+Compiling module xil_defaultlib.Forwarding_unit
+Compiling module xil_defaultlib.MUX4x1
+Compiling module xil_defaultlib.N_BIT_4x1mux_default
+Compiling module xil_defaultlib.Single_Ported_Memory
+Compiling module xil_defaultlib.N_bit_MUX(n=12)
+Compiling module xil_defaultlib.Single_Cycle_CPU
+Compiling module xil_defaultlib.CPU_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot CPU_tb_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 1575.816 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '8' seconds
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 1575.816 ; gain = 0.000
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:14 . Memory (MB): peak = 1575.816 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'CPU_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj CPU_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/imports/marammahmoudi/lab_3/lab_3.srcs/sources_1/new/DFlip_flop.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DFlip_flop
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/imports/marammahmoudi/lab_4/lab_4.srcs/sources_1/new/Exp2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Register_File
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/imports/marammahmoudi/lab_4/lab_4.srcs/sources_1/new/Exp4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_Control_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/new/Forwarding_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Forwarding_unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/imports/VerilogSrc/ImmGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rv32_ImmGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/imports/marammahmoudi/lab_3/lab_3.srcs/sources_1/new/MUX2x1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX2x1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/new/MUX4x1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX4x1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/new/N_BIT_4x1mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module N_BIT_4x1mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/imports/marammahmoudi/lab_3/lab_3.srcs/sources_1/new/N_bit_MUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module N_bit_MUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/imports/new/N_bit_register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module N_bit_register
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/new/Single_Cycle_CPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Single_Cycle_CPU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/new/Single_Ported_Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Single_Ported_Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/new/control_branches.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control_branches
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/imports/marammahmoudi/lab_4/lab_4.srcs/sources_1/new/exp3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/imports/VerilogSrc/prv32_ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module prv32_ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/new/shifter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module shifter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sim_1/new/CPU_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU_tb
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'CPU_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot CPU_tb_behav xil_defaultlib.CPU_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2022.1
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2022.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot CPU_tb_behav xil_defaultlib.CPU_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 157 differs from formal bit length 160 for port 'D' [C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/new/Single_Cycle_CPU.v:90]
+WARNING: [VRFC 10-3091] actual bit length 157 differs from formal bit length 160 for port 'Q' [C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/new/Single_Cycle_CPU.v:91]
+WARNING: [VRFC 10-3091] actual bit length 145 differs from formal bit length 300 for port 'D' [C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/new/Single_Cycle_CPU.v:93]
+WARNING: [VRFC 10-3091] actual bit length 145 differs from formal bit length 300 for port 'Q' [C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/new/Single_Cycle_CPU.v:94]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 12 for port 'A' [C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/new/Single_Cycle_CPU.v:144]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.MUX2x1
+Compiling module xil_defaultlib.DFlip_flop
+Compiling module xil_defaultlib.N_bit_register(N=96)
+Compiling module xil_defaultlib.N_bit_register(N=196)
+Compiling module xil_defaultlib.N_bit_register(N=160)
+Compiling module xil_defaultlib.N_bit_register(N=300)
+Compiling module xil_defaultlib.N_bit_register_default
+Compiling module xil_defaultlib.Control_Unit
+Compiling module xil_defaultlib.Register_File_default
+Compiling module xil_defaultlib.rv32_ImmGen
+Compiling module xil_defaultlib.N_bit_MUX_default
+Compiling module xil_defaultlib.ALU_Control_Unit
+Compiling module xil_defaultlib.shifter
+Compiling module xil_defaultlib.prv32_ALU
+Compiling module xil_defaultlib.control_branches
+Compiling module xil_defaultlib.Forwarding_unit
+Compiling module xil_defaultlib.MUX4x1
+Compiling module xil_defaultlib.N_BIT_4x1mux_default
+Compiling module xil_defaultlib.Single_Ported_Memory
+Compiling module xil_defaultlib.N_bit_MUX(n=12)
+Compiling module xil_defaultlib.Single_Cycle_CPU
+Compiling module xil_defaultlib.CPU_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot CPU_tb_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1575.816 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1575.816 ; gain = 0.000
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:15 . Memory (MB): peak = 1575.816 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'CPU_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj CPU_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/imports/marammahmoudi/lab_3/lab_3.srcs/sources_1/new/DFlip_flop.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DFlip_flop
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/imports/marammahmoudi/lab_4/lab_4.srcs/sources_1/new/Exp2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Register_File
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/imports/marammahmoudi/lab_4/lab_4.srcs/sources_1/new/Exp4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_Control_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/new/Forwarding_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Forwarding_unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/imports/VerilogSrc/ImmGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rv32_ImmGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/imports/marammahmoudi/lab_3/lab_3.srcs/sources_1/new/MUX2x1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX2x1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/new/MUX4x1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX4x1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/new/N_BIT_4x1mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module N_BIT_4x1mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/imports/marammahmoudi/lab_3/lab_3.srcs/sources_1/new/N_bit_MUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module N_bit_MUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/imports/new/N_bit_register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module N_bit_register
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/new/Single_Cycle_CPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Single_Cycle_CPU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/new/Single_Ported_Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Single_Ported_Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/new/control_branches.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control_branches
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/imports/marammahmoudi/lab_4/lab_4.srcs/sources_1/new/exp3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/imports/VerilogSrc/prv32_ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module prv32_ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/new/shifter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module shifter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sim_1/new/CPU_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU_tb
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'CPU_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot CPU_tb_behav xil_defaultlib.CPU_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2022.1
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2022.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot CPU_tb_behav xil_defaultlib.CPU_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 157 differs from formal bit length 160 for port 'D' [C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/new/Single_Cycle_CPU.v:90]
+WARNING: [VRFC 10-3091] actual bit length 157 differs from formal bit length 160 for port 'Q' [C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/new/Single_Cycle_CPU.v:91]
+WARNING: [VRFC 10-3091] actual bit length 145 differs from formal bit length 300 for port 'D' [C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/new/Single_Cycle_CPU.v:93]
+WARNING: [VRFC 10-3091] actual bit length 145 differs from formal bit length 300 for port 'Q' [C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/new/Single_Cycle_CPU.v:94]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 12 for port 'A' [C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/new/Single_Cycle_CPU.v:144]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.MUX2x1
+Compiling module xil_defaultlib.DFlip_flop
+Compiling module xil_defaultlib.N_bit_register(N=96)
+Compiling module xil_defaultlib.N_bit_register(N=196)
+Compiling module xil_defaultlib.N_bit_register(N=160)
+Compiling module xil_defaultlib.N_bit_register(N=300)
+Compiling module xil_defaultlib.N_bit_register_default
+Compiling module xil_defaultlib.Control_Unit
+Compiling module xil_defaultlib.Register_File_default
+Compiling module xil_defaultlib.rv32_ImmGen
+Compiling module xil_defaultlib.N_bit_MUX_default
+Compiling module xil_defaultlib.ALU_Control_Unit
+Compiling module xil_defaultlib.shifter
+Compiling module xil_defaultlib.prv32_ALU
+Compiling module xil_defaultlib.control_branches
+Compiling module xil_defaultlib.Forwarding_unit
+Compiling module xil_defaultlib.MUX4x1
+Compiling module xil_defaultlib.N_BIT_4x1mux_default
+Compiling module xil_defaultlib.Single_Ported_Memory
+Compiling module xil_defaultlib.N_bit_MUX(n=12)
+Compiling module xil_defaultlib.Single_Cycle_CPU
+Compiling module xil_defaultlib.CPU_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot CPU_tb_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1575.816 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1575.816 ; gain = 0.000
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:13 . Memory (MB): peak = 1575.816 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'CPU_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj CPU_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/imports/marammahmoudi/lab_3/lab_3.srcs/sources_1/new/DFlip_flop.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DFlip_flop
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/imports/marammahmoudi/lab_4/lab_4.srcs/sources_1/new/Exp2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Register_File
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/imports/marammahmoudi/lab_4/lab_4.srcs/sources_1/new/Exp4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_Control_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/new/Forwarding_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Forwarding_unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/imports/VerilogSrc/ImmGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rv32_ImmGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/imports/marammahmoudi/lab_3/lab_3.srcs/sources_1/new/MUX2x1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX2x1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/new/MUX4x1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX4x1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/new/N_BIT_4x1mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module N_BIT_4x1mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/imports/marammahmoudi/lab_3/lab_3.srcs/sources_1/new/N_bit_MUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module N_bit_MUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/imports/new/N_bit_register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module N_bit_register
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/new/Single_Cycle_CPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Single_Cycle_CPU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/new/Single_Ported_Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Single_Ported_Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/new/control_branches.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control_branches
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/imports/marammahmoudi/lab_4/lab_4.srcs/sources_1/new/exp3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/imports/VerilogSrc/prv32_ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module prv32_ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/new/shifter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module shifter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sim_1/new/CPU_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU_tb
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'CPU_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot CPU_tb_behav xil_defaultlib.CPU_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2022.1
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2022.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot CPU_tb_behav xil_defaultlib.CPU_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 157 differs from formal bit length 160 for port 'D' [C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/new/Single_Cycle_CPU.v:90]
+WARNING: [VRFC 10-3091] actual bit length 157 differs from formal bit length 160 for port 'Q' [C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/new/Single_Cycle_CPU.v:91]
+WARNING: [VRFC 10-3091] actual bit length 145 differs from formal bit length 300 for port 'D' [C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/new/Single_Cycle_CPU.v:93]
+WARNING: [VRFC 10-3091] actual bit length 145 differs from formal bit length 300 for port 'Q' [C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/new/Single_Cycle_CPU.v:94]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 12 for port 'A' [C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/new/Single_Cycle_CPU.v:144]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.MUX2x1
+Compiling module xil_defaultlib.DFlip_flop
+Compiling module xil_defaultlib.N_bit_register(N=96)
+Compiling module xil_defaultlib.N_bit_register(N=196)
+Compiling module xil_defaultlib.N_bit_register(N=160)
+Compiling module xil_defaultlib.N_bit_register(N=300)
+Compiling module xil_defaultlib.N_bit_register_default
+Compiling module xil_defaultlib.Control_Unit
+Compiling module xil_defaultlib.Register_File_default
+Compiling module xil_defaultlib.rv32_ImmGen
+Compiling module xil_defaultlib.N_bit_MUX_default
+Compiling module xil_defaultlib.ALU_Control_Unit
+Compiling module xil_defaultlib.shifter
+Compiling module xil_defaultlib.prv32_ALU
+Compiling module xil_defaultlib.control_branches
+Compiling module xil_defaultlib.Forwarding_unit
+Compiling module xil_defaultlib.MUX4x1
+Compiling module xil_defaultlib.N_BIT_4x1mux_default
+Compiling module xil_defaultlib.Single_Ported_Memory
+Compiling module xil_defaultlib.N_bit_MUX(n=12)
+Compiling module xil_defaultlib.Single_Cycle_CPU
+Compiling module xil_defaultlib.CPU_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot CPU_tb_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1575.816 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1575.816 ; gain = 0.000
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:13 . Memory (MB): peak = 1575.816 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'CPU_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj CPU_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/imports/marammahmoudi/lab_3/lab_3.srcs/sources_1/new/DFlip_flop.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DFlip_flop
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/imports/marammahmoudi/lab_4/lab_4.srcs/sources_1/new/Exp2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Register_File
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/imports/marammahmoudi/lab_4/lab_4.srcs/sources_1/new/Exp4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_Control_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/new/Forwarding_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Forwarding_unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/imports/VerilogSrc/ImmGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rv32_ImmGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/imports/marammahmoudi/lab_3/lab_3.srcs/sources_1/new/MUX2x1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX2x1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/new/MUX4x1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX4x1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/new/N_BIT_4x1mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module N_BIT_4x1mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/imports/marammahmoudi/lab_3/lab_3.srcs/sources_1/new/N_bit_MUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module N_bit_MUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/imports/new/N_bit_register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module N_bit_register
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/new/Single_Cycle_CPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Single_Cycle_CPU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/new/Single_Ported_Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Single_Ported_Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/new/control_branches.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control_branches
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/imports/marammahmoudi/lab_4/lab_4.srcs/sources_1/new/exp3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/imports/VerilogSrc/prv32_ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module prv32_ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/new/shifter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module shifter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sim_1/new/CPU_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU_tb
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'CPU_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot CPU_tb_behav xil_defaultlib.CPU_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2022.1
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2022.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot CPU_tb_behav xil_defaultlib.CPU_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 157 differs from formal bit length 160 for port 'D' [C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/new/Single_Cycle_CPU.v:90]
+WARNING: [VRFC 10-3091] actual bit length 157 differs from formal bit length 160 for port 'Q' [C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/new/Single_Cycle_CPU.v:91]
+WARNING: [VRFC 10-3091] actual bit length 145 differs from formal bit length 300 for port 'D' [C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/new/Single_Cycle_CPU.v:93]
+WARNING: [VRFC 10-3091] actual bit length 145 differs from formal bit length 300 for port 'Q' [C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/new/Single_Cycle_CPU.v:94]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 12 for port 'A' [C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/new/Single_Cycle_CPU.v:144]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.MUX2x1
+Compiling module xil_defaultlib.DFlip_flop
+Compiling module xil_defaultlib.N_bit_register(N=96)
+Compiling module xil_defaultlib.N_bit_register(N=196)
+Compiling module xil_defaultlib.N_bit_register(N=160)
+Compiling module xil_defaultlib.N_bit_register(N=300)
+Compiling module xil_defaultlib.N_bit_register_default
+Compiling module xil_defaultlib.Control_Unit
+Compiling module xil_defaultlib.Register_File_default
+Compiling module xil_defaultlib.rv32_ImmGen
+Compiling module xil_defaultlib.N_bit_MUX_default
+Compiling module xil_defaultlib.ALU_Control_Unit
+Compiling module xil_defaultlib.shifter
+Compiling module xil_defaultlib.prv32_ALU
+Compiling module xil_defaultlib.control_branches
+Compiling module xil_defaultlib.Forwarding_unit
+Compiling module xil_defaultlib.MUX4x1
+Compiling module xil_defaultlib.N_BIT_4x1mux_default
+Compiling module xil_defaultlib.Single_Ported_Memory
+Compiling module xil_defaultlib.N_bit_MUX(n=12)
+Compiling module xil_defaultlib.Single_Cycle_CPU
+Compiling module xil_defaultlib.CPU_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot CPU_tb_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1575.816 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1575.816 ; gain = 0.000
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:13 . Memory (MB): peak = 1575.816 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'CPU_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj CPU_tb_vlog.prj"
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:12 . Memory (MB): peak = 1575.816 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '12' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:12 . Memory (MB): peak = 1575.816 ; gain = 0.000
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'CPU_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot CPU_tb_behav xil_defaultlib.CPU_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2022.1
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2022.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot CPU_tb_behav xil_defaultlib.CPU_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 157 differs from formal bit length 160 for port 'D' [C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/new/Single_Cycle_CPU.v:90]
+WARNING: [VRFC 10-3091] actual bit length 157 differs from formal bit length 160 for port 'Q' [C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/new/Single_Cycle_CPU.v:91]
+WARNING: [VRFC 10-3091] actual bit length 145 differs from formal bit length 300 for port 'D' [C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/new/Single_Cycle_CPU.v:93]
+WARNING: [VRFC 10-3091] actual bit length 145 differs from formal bit length 300 for port 'Q' [C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/new/Single_Cycle_CPU.v:94]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 12 for port 'A' [C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/new/Single_Cycle_CPU.v:144]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:17 . Memory (MB): peak = 1575.816 ; gain = 0.000
+save_wave_config {C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sim_1/imports/Project_mileStone1/CPU_tb_behav.wcfg}
+save_wave_config {C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sim_1/imports/Project_mileStone1/CPU_tb_behav.wcfg}
+save_wave_config {C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sim_1/imports/Project_mileStone1/CPU_tb_behav.wcfg}
+save_wave_config {C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sim_1/imports/Project_mileStone1/CPU_tb_behav.wcfg}
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'CPU_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj CPU_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/imports/marammahmoudi/lab_3/lab_3.srcs/sources_1/new/DFlip_flop.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DFlip_flop
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/imports/marammahmoudi/lab_4/lab_4.srcs/sources_1/new/Exp2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Register_File
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/imports/marammahmoudi/lab_4/lab_4.srcs/sources_1/new/Exp4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_Control_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/new/Forwarding_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Forwarding_unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/imports/VerilogSrc/ImmGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rv32_ImmGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/imports/marammahmoudi/lab_3/lab_3.srcs/sources_1/new/MUX2x1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX2x1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/new/MUX4x1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX4x1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/new/N_BIT_4x1mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module N_BIT_4x1mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/imports/marammahmoudi/lab_3/lab_3.srcs/sources_1/new/N_bit_MUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module N_bit_MUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/imports/new/N_bit_register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module N_bit_register
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/new/Single_Cycle_CPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Single_Cycle_CPU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/new/Single_Ported_Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Single_Ported_Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/new/control_branches.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control_branches
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/imports/marammahmoudi/lab_4/lab_4.srcs/sources_1/new/exp3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/imports/VerilogSrc/prv32_ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module prv32_ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/new/shifter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module shifter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sim_1/new/CPU_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU_tb
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'CPU_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot CPU_tb_behav xil_defaultlib.CPU_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2022.1
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2022.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot CPU_tb_behav xil_defaultlib.CPU_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 157 differs from formal bit length 160 for port 'D' [C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/new/Single_Cycle_CPU.v:90]
+WARNING: [VRFC 10-3091] actual bit length 157 differs from formal bit length 160 for port 'Q' [C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/new/Single_Cycle_CPU.v:91]
+WARNING: [VRFC 10-3091] actual bit length 145 differs from formal bit length 300 for port 'D' [C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/new/Single_Cycle_CPU.v:93]
+WARNING: [VRFC 10-3091] actual bit length 145 differs from formal bit length 300 for port 'Q' [C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/new/Single_Cycle_CPU.v:94]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 12 for port 'A' [C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/new/Single_Cycle_CPU.v:144]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.MUX2x1
+Compiling module xil_defaultlib.DFlip_flop
+Compiling module xil_defaultlib.N_bit_register(N=96)
+Compiling module xil_defaultlib.N_bit_register(N=196)
+Compiling module xil_defaultlib.N_bit_register(N=160)
+Compiling module xil_defaultlib.N_bit_register(N=300)
+Compiling module xil_defaultlib.N_bit_register_default
+Compiling module xil_defaultlib.Control_Unit
+Compiling module xil_defaultlib.Register_File_default
+Compiling module xil_defaultlib.rv32_ImmGen
+Compiling module xil_defaultlib.N_bit_MUX_default
+Compiling module xil_defaultlib.ALU_Control_Unit
+Compiling module xil_defaultlib.shifter
+Compiling module xil_defaultlib.prv32_ALU
+Compiling module xil_defaultlib.control_branches
+Compiling module xil_defaultlib.Forwarding_unit
+Compiling module xil_defaultlib.MUX4x1
+Compiling module xil_defaultlib.N_BIT_4x1mux_default
+Compiling module xil_defaultlib.Single_Ported_Memory
+Compiling module xil_defaultlib.N_bit_MUX(n=12)
+Compiling module xil_defaultlib.Single_Cycle_CPU
+Compiling module xil_defaultlib.CPU_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot CPU_tb_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1575.816 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1575.816 ; gain = 0.000
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:13 . Memory (MB): peak = 1575.816 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'CPU_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj CPU_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/imports/marammahmoudi/lab_3/lab_3.srcs/sources_1/new/DFlip_flop.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DFlip_flop
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/imports/marammahmoudi/lab_4/lab_4.srcs/sources_1/new/Exp2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Register_File
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/imports/marammahmoudi/lab_4/lab_4.srcs/sources_1/new/Exp4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_Control_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/new/Forwarding_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Forwarding_unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/imports/VerilogSrc/ImmGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rv32_ImmGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/imports/marammahmoudi/lab_3/lab_3.srcs/sources_1/new/MUX2x1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX2x1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/new/MUX4x1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX4x1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/new/N_BIT_4x1mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module N_BIT_4x1mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/imports/marammahmoudi/lab_3/lab_3.srcs/sources_1/new/N_bit_MUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module N_bit_MUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/imports/new/N_bit_register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module N_bit_register
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/new/Single_Cycle_CPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Single_Cycle_CPU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/new/Single_Ported_Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Single_Ported_Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/new/control_branches.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control_branches
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/imports/marammahmoudi/lab_4/lab_4.srcs/sources_1/new/exp3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/imports/VerilogSrc/prv32_ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module prv32_ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/new/shifter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module shifter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sim_1/new/CPU_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU_tb
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'CPU_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot CPU_tb_behav xil_defaultlib.CPU_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2022.1
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2022.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot CPU_tb_behav xil_defaultlib.CPU_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 157 differs from formal bit length 160 for port 'D' [C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/new/Single_Cycle_CPU.v:90]
+WARNING: [VRFC 10-3091] actual bit length 157 differs from formal bit length 160 for port 'Q' [C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/new/Single_Cycle_CPU.v:91]
+WARNING: [VRFC 10-3091] actual bit length 145 differs from formal bit length 300 for port 'D' [C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/new/Single_Cycle_CPU.v:93]
+WARNING: [VRFC 10-3091] actual bit length 145 differs from formal bit length 300 for port 'Q' [C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/new/Single_Cycle_CPU.v:94]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 12 for port 'A' [C:/Users/ikrame.rekabi/Documents/GitHub/Pipelined_RiscV_Processor/lab5_Maram_Ikrame.srcs/sources_1/new/Single_Cycle_CPU.v:144]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.MUX2x1
+Compiling module xil_defaultlib.DFlip_flop
+Compiling module xil_defaultlib.N_bit_register(N=96)
+Compiling module xil_defaultlib.N_bit_register(N=196)
+Compiling module xil_defaultlib.N_bit_register(N=160)
+Compiling module xil_defaultlib.N_bit_register(N=300)
+Compiling module xil_defaultlib.N_bit_register_default
+Compiling module xil_defaultlib.Control_Unit
+Compiling module xil_defaultlib.Register_File_default
+Compiling module xil_defaultlib.rv32_ImmGen
+Compiling module xil_defaultlib.N_bit_MUX_default
+Compiling module xil_defaultlib.ALU_Control_Unit
+Compiling module xil_defaultlib.shifter
+Compiling module xil_defaultlib.prv32_ALU
+Compiling module xil_defaultlib.control_branches
+Compiling module xil_defaultlib.Forwarding_unit
+Compiling module xil_defaultlib.MUX4x1
+Compiling module xil_defaultlib.N_BIT_4x1mux_default
+Compiling module xil_defaultlib.Single_Ported_Memory
+Compiling module xil_defaultlib.N_bit_MUX(n=12)
+Compiling module xil_defaultlib.Single_Cycle_CPU
+Compiling module xil_defaultlib.CPU_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot CPU_tb_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1575.816 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1575.816 ; gain = 0.000
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:13 . Memory (MB): peak = 1575.816 ; gain = 0.000
