@@ -197,7 +197,7 @@ module Control_Unit( input [4:0] inst6_2, input inst_20, output reg branch, outp
             begin
                 RF_select = 2'b01; // taking  the ALU output 
             end
-        else if (memtoReg == 0 && jal_jalr == 1 && AUIPC == 0)
+        else if (memtoReg == 0 && (jal_jalr == 1 || jal_jalr ==2 )&& AUIPC == 0)
             begin
                 RF_select = 2'b10; // taking  pc_add (pc +4)  
             end

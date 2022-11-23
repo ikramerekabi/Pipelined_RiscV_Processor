@@ -274,7 +274,10 @@ module Single_Ported_Memory(input clk, mem_read, mem_write, input [2:0]fn3, inpu
             {mem[55],mem[54],mem[53],mem[52]}= 32'h00d00193  ; // addi x3, x0, 13			
             {mem[59],mem[58],mem[57],mem[56]}= 32'h00010067  ; // jalr x0, 0(x2)
             {mem[63],mem[62],mem[61],mem[60]}= 32'h00000033  ; //    add x0, x0, x0
-            {mem[67],mem[66],mem[65],mem[64]}= 32'h00000073  ; //    ecall
+            {mem[67],mem[66],mem[65],mem[64]}= 32'hfff090b7  ; //   lui x1 1048329
+ 
+            {mem[71],mem[70],mem[69],mem[68]} = 32'h00237217 ; // auipc x4, 567  
+
     end
 
     always @(*)
