@@ -28,15 +28,14 @@ module Single_Ported_Memory(input clk, mem_read, mem_write, input [2:0]fn3, inpu
         {mem[155],mem[154],mem[153],mem[152]}=32'd0;
         {mem[159],mem[158],mem[157],mem[156]}=32'd32769; // this is for the lh and lhu //-32767 for the lh //32769 lhu
         {mem[163],mem[162],mem[161],mem[160]}=32'd130; //to test the lb and lbu // lbu = 130 // lb = -126
-        //       {mem[167],mem[166],mem[165],mem[164]}=32'd0;
-        //       {mem[171],mem[170],mem[169],mem[168]}=32'd0;
+        {mem[167],mem[166],mem[165],mem[164]}=32'd11;
+        {mem[171],mem[170],mem[169],mem[168]}=32'd65539;
         //       {mem[175],mem[174],mem[173],mem[172]}=32'd0;
         // mem[140]=8'd0;
 
     end
-
     initial begin
-
+   
         //Test Case 1
         /*
         {mem[3], mem[2], mem[1], mem[0]}=32'b000000000000_00000_000_00000_0110011 ; //add x0, x0, x0
@@ -203,7 +202,7 @@ module Single_Ported_Memory(input clk, mem_read, mem_write, input [2:0]fn3, inpu
 */
 
         // Test Case 2 //R instructions 
-
+/*
         {mem[3],mem[2],mem[1],mem[0]}=    32'h00002083; //Lw x1, 0(x0)    #x1= 17;  
         {mem[7],mem[6],mem[5],mem[4]}=    32'h00402103; //Lw x2, 4(x0)   #x2 = 9    
         {mem[11],mem[10],mem[9],mem[8]}=  32'h00802183; //Lw x3, 8(x0)   #x3= 25 
@@ -220,25 +219,64 @@ module Single_Ported_Memory(input clk, mem_read, mem_write, input [2:0]fn3, inpu
         {mem[55],mem[54],mem[53],mem[52]}=32'h003140b3; //xor x1, x2, x3 #x1= 30
         {mem[59],mem[58],mem[57],mem[56]}=32'h00000073; //Ecall         
 
+*/
+// Test Case 3 // B instructions  // with 
+/*
+ {mem[3],mem[2],mem[1],mem[0]}=          32'h00002083  ;  //    Lw x1, 0(x0)    #x1= 17; 
+ {mem[7],mem[6],mem[5],mem[4]}=          32'h00402103  ;  //    Lw x2, 4(x0)   #x2 = 9 
+ {mem[11],mem[10],mem[9],mem[8]}=        32'h00802183  ;  //    Lw x3, 8(x0)   #x3= 25 
+ {mem[15],mem[14],mem[13],mem[12]}=      32'h00c02203  ;  //    Lw x4, 12(x0) # x4= -5 
+ {mem[19],mem[18],mem[17],mem[16]}=      32'h01002283  ;  //    Lw x5, 16(x0) # x5 = 2 
+ {mem[23],mem[22],mem[21],mem[20]}=      32'h02402303  ;  //    lw x6, 20(x0) # x6 = 11
+ {mem[27],mem[26],mem[25],mem[24]}=      32'hffe08093  ;  //    addi x1, x1, -2  # x1 = 15 
+ {mem[31],mem[30],mem[29],mem[28]}=      32'hfff30313  ;  //    addi x6, x6, -7 #x6 = 10
+ {mem[35],mem[34],mem[33],mem[32]}=      32'h40618133  ;  //    sub x2, x3, x6 #x2 = 15
+ {mem[39],mem[38],mem[37],mem[36]}=      32'h00110663  ;  //    beq x2, x1, loop # it will jump to 
+ {mem[43],mem[42],mem[41],mem[40]}=      32'h0020e1b3  ;  //    or x3, x1, x2 
+ {mem[47],mem[46],mem[45],mem[44]}=      32'h0020f133  ;  //    and x2, x1, x2
+ {mem[51],mem[50],mem[49],mem[48]}=      32'h005211b3  ;  //   sll x3, x4, x5 # x3= -20                  
+ {mem[55],mem[54],mem[53],mem[52]}=      32'hffd20313  ;  //   addi x6, x4, -3 # x6= -8                   
+ {mem[59],mem[58],mem[57],mem[56]}=      32'h00331463  ;  //   bne x6, x3, label # jamp to andi           
+ {mem[63],mem[62],mem[61],mem[60]}=      32'h403381b3  ;  //   sub x3, x7, x3                             
+ {mem[67],mem[66],mem[65],mem[64]}=      32'hffe27113  ;  //   andi x2, x4, -2 # x2= -6                                                                                                                                                                                                  
+ {mem[71],mem[70],mem[69],mem[68]}=      32'h005140b3  ;  //   xor x1, x2, x5  #x1= -8                                                                                                                                                                        
+ {mem[75],mem[74],mem[73],mem[72]}=      32'h02424263  ;  //   blt x4, x4, hi  # should not jump                                                                                                                                                              
+ {mem[79],mem[78],mem[77],mem[76]}=      32'h00225463  ;  //   bge x4, x2, hello #jump to xori                                                                                                                                                                
+ {mem[83],mem[82],mem[81],mem[80]}=      32'h4023d313  ;  //   srai x6, x7, 2                                                                                                                                                                                 
+ {mem[87],mem[86],mem[85],mem[84]}=      32'h00114213  ;  //    xori x4, x2, 1 # x4= -5                                                                                                                                                                       
+  {mem[91],mem[90],mem[89],mem[88]}=     32'h0080036f  ;  //    jal x6, L2 # x6 = 68  # jump to add                                                                                                                                                           
+  {mem[95],mem[94],mem[93],mem[92]}=     32'h001111b3  ;  //    sll x3, x2, x1                                                                                                                                                                                
+  {mem[99],mem[98],mem[97],mem[96]}=     32'h003100b3  ;  //    add x1, x2, x3 # x1= -26                                                                                                                                                                      
+  {mem[103],mem[102],mem[101],mem[100]}= 32'h0050e463  ;  //    bltu x1, x5, hi # x1 =-26 , x5 =2 , since unsigned we dont care about the sign so it s wrong, then we do next instruction                                                                     
+  {mem[107],mem[106],mem[105],mem[104]}= 32'h00000033 ;   //    add x0, x0, x0                                                                                                                                                                                
+  {mem[111],mem[110],mem[109],mem[108]}= 32'h00537463 ;   //    bgeu x6, x5, end  # should jump to end nd break     //problems!                                                                                                                                          
+  {mem[115],mem[114],mem[113],mem[112]}= 32'h00000033 ;   //    add x0, x0, x0                                                                                                                                                                                
+  {mem[119],mem[118],mem[117],mem[116]} =32'h00000033 ;   //   ecall  
+  {mem[122],mem[121],mem[120],mem[119]} =32'h00000073 ;   //   ecall  
+  
+ 
+ */
+ //Test Case 4 // JALR JAL
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            {mem[3],mem[2],mem[1],mem[0]}=   32'h00402183; //lw x3, 4(x0) #x3 = 9
+            {mem[7],mem[6],mem[5],mem[4]}=  32'h00802083  ; //lw x1, 8(x0) # x1 = 25
+            {mem[11],mem[10],mem[9],mem[8]}= 32'h00302023  ; //sw x3, 0(x0) #mem[0] =9 
+            {mem[15],mem[14],mem[13],mem[12]}= 32'h10100093  ; //addi x1, x0, 257 # x1 = 257
+            {mem[19],mem[18],mem[17],mem[16]}= 32'h001000a3  ; //sb x1, 1(x0) # check mem[1] = 1
+            {mem[23],mem[22],mem[21],mem[20]}= 32'h02802203  ; //lw x4, 40(x0) # x2 = 65537
+            {mem[27],mem[26],mem[25],mem[24]}= 32'h00401123  ; //sh x2, 2(x0) # check mem[2] = 3
+            {mem[31],mem[30],mem[29],mem[28]}= 32'h0140016f  ; //jal x2, L1   
+            {mem[35],mem[34],mem[33],mem[32]}= 32'h00000033  ; //add x0, x0, x0
+            {mem[39],mem[38],mem[37],mem[36]}= 32'h08600093  ; //addi x1, x0, 134		
+            {mem[43],mem[42],mem[41],mem[40]}= 32'h00000033  ; //add x0, x0, x0
+            {mem[47],mem[46],mem[45],mem[44]}= 32'h0100026f  ; //jal x4, out
+            {mem[51],mem[50],mem[49],mem[48]}= 32'h20000093  ; // addi x1, x0, 512		
+            {mem[55],mem[54],mem[53],mem[52]}= 32'h00d00193  ; // addi x3, x0, 13			
+            {mem[59],mem[58],mem[57],mem[56]}= 32'h00010067  ; // jalr x0, 0(x2)
+            {mem[63],mem[62],mem[61],mem[60]}= 32'h00000033  ; //    add x0, x0, x0
+            {mem[67],mem[66],mem[65],mem[64]}= 32'h00000073  ; //    ecall
     end
-    // Posedge clk?
+
     always @(*)
     begin
         if(mem_write == 1'b1)
@@ -258,7 +296,6 @@ module Single_Ported_Memory(input clk, mem_read, mem_write, input [2:0]fn3, inpu
             begin
                 data_out= {mem[addrs+3],mem[addrs+2],mem[addrs+1],mem[addrs]}; // addr of instruction 
             end
-
         else
             begin
                 if(mem_read == 1'b1)
@@ -275,11 +312,6 @@ module Single_Ported_Memory(input clk, mem_read, mem_write, input [2:0]fn3, inpu
                     else if (fn3 == `F3_LHU ) //lhu
                         data_out = {16'b0,mem[data_address+1], mem[data_address]} ;
                 end
-
-
             end
-
-
     end
-
-endmodule
+endmodule 

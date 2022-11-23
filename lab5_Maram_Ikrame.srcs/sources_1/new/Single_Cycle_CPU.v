@@ -72,6 +72,7 @@ module Single_Cycle_CPU(input rst, input clk, input [1:0]ledSel,
     wire [31:0] forwarding_mux_RS1_out, forwarding_mux_RS2_out;
     wire pc_src;
     wire [11:0] flushing_mux_out;
+    wire  I_instruction_flag;
 
    // wire [1:0] forwardA, forwardB; //for the forwarding unit 
    // wire [31:0] hazard_mux_rs1_output, hazard_mux_rs2_output;
@@ -111,10 +112,10 @@ module Single_Cycle_CPU(input rst, input clk, input [1:0]ledSel,
 
     N_bit_MUX inst_RF_MUX(.A(ID_EX_Imm), .B(forwarding_mux_RS2_out),  .sel(ID_EX_Ctrl[1]), .C(RF_MUX_output) );
 
-    ALU_Control_Unit inst_ALUCU( .ALUop(ID_EX_Ctrl[4:3]),.opcode(ID_EX_opcode), .inst14_12(ID_EX_Func [2:0]) ,.inst30( ID_EX_Func[3]), .ALUselc(lAU_Control_output));
+    ALU_Control_Unit inst_ALUCU( .ALUop(ID_EX_Ctrl[4:3]),.opcode(ID_EX_opcode), .inst14_12(ID_EX_Func [2:0]) ,.inst30( ID_EX_Func[3]), .ALUselc(lAU_Control_output), .I_instruction_flag(I_instruction_flag));
 
     prv32_ALU inst_LAUC(.a(forwarding_mux_RS1_out), .b(RF_MUX_output), .shamt(IF_ID_Inst[24:20] ), .r(NBit_lAU_output), .zf(LAU_zero_flag),
-        .cf(cf),.vf(vf), .sf(sf), .alufn(lAU_Control_output)); // shamt from ID_ID  right? and everthing else taken from inst !!!!!
+        .cf(cf),.vf(vf), .sf(sf), .alufn(lAU_Control_output), .I_instruction_flag(I_instruction_flag)); // shamt from ID_ID  right? and everthing else taken from inst !!!!!
 
     control_branches cb(.function3(EX_MEM_func3),.branch(EX_MEM_Cntrl[7]),.zf(EX_MEM_Zero), .cf(EX_MEM_cf),.vf(EX_MEM_vf), .sf(EX_MEM_sf), .control_Branch_output(control_Branch_output), .jal_jalr(EX_MEM_Cntrl[11:10]));
     
@@ -132,6 +133,7 @@ module Single_Cycle_CPU(input rst, input clk, input [1:0]ledSel,
     assign sum = ID_EX_Imm + ID_EX_PC;
 
     assign pc_add = 4 + pc_output;
+
 
     N_BIT_4x1mux  Data_Mem_MUX(.a(MEM_WB_Load_out), .b(MEM_WB_ALU_out), .c(MEM_WB_pc_add), .d(MEM_WB_BranchAddOut), .sel(MEM_WB_Ctrl[9:8]), .out(writedata_RF)); // incase of error check the order
 

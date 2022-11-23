@@ -3,7 +3,8 @@ module prv32_ALU(
 	input   wire [4:0]  shamt,
 	output  reg  [31:0] r,
 	output  wire cf, zf, vf, sf,
-	input   wire [3:0]  alufn
+	input   wire [3:0]  alufn,
+	input I_instruction_flag
 );
 
     wire [31:0] add, op_b;
@@ -17,8 +18,10 @@ module prv32_ALU(
     assign vf = (a[31] ^ (op_b[31]) ^ add[31] ^ cf);
     
     wire[31:0] sh;
-   
-    shifter shifter0(.a(a), .shamt(shamt), .type(alufn[1:0]),  .r(sh)); // to be changed 
+   // assign r = I_instruction_flag ?():();
+    //shifter shifter0(.a(a), .shamt(shamt), .type(alufn[1:0]),  .r(shift_I)); // to be changed 
+    shifter shifter0(.a(a), .shamt_R(b), .shamt(shamt),.I_inst_flag(I_instruction_flag) ,.type(alufn[1:0]),  .r(sh)); // to be changed 
+    //shifter(input [31:0]a, input [31:0] shamt_R, input I_inst_flag, [4:0]shamt, [1:0]type, output reg  [31:0] r);
     
     always @ * begin
         r = 0;
@@ -41,7 +44,7 @@ module prv32_ALU(
             4'b11_11:  r = {31'b0,(~cf)};  
             //lw and sw 
             4'b00_10:    r = add; //lw        	
-            4'b01_10:    r =  a-b; //branching 
+            4'b01_10:    r = a-b; //branching 
             4'b10_11:    r = b; // jal 
           
         endcase
